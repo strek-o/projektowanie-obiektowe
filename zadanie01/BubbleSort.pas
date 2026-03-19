@@ -1,31 +1,36 @@
 
 Program BubbleSort;
 
+{$mode objfpc}
+
 Uses crt;
 
 Type 
-  IntArray = array[1..50] Of integer;
+  IntArray = array Of integer;
 
 Var 
   numbers: IntArray;
   j: integer;
 
-Procedure GenerateIntegers(Var arr: IntArray);
+Procedure GenerateIntegers(Var arr: IntArray; min, max, len: integer);
 
 Var i: integer;
 Begin
+  SetLength(arr, len);
   randomize;
-  For i := 1 To 50 Do
-    arr[i] := random(101);
+  For i := 0 To len - 1 Do
+    arr[i] := min + random(max - min + 1);
 End;
 
 Procedure BubbleSort(Var arr: IntArray);
 
 Var 
-  k, l, temp: integer;
+  k, l, temp, len: integer;
 Begin
-  For k := 1 To 49 Do
-    For l := 1 To 50 - k Do
+  len := Length(arr);
+  If len < 2 Then Exit;
+  For k := 0 To len - 2 Do
+    For l := 0 To len - 2 - k Do
       If arr[l] > arr[l+1] Then
         Begin
           temp := arr[l];
@@ -36,11 +41,12 @@ End;
 
 Begin
   clrscr;
-  GenerateIntegers(numbers);
+  GenerateIntegers(numbers, -100, 100, 75);
   BubbleSort(numbers);
 
-  For j:=1 To 50 Do
+  For j := 0 To Length(numbers) - 1 Do
     write(numbers[j], ' ');
   writeln;
 
+  SetLength(numbers, 0);
 End.
