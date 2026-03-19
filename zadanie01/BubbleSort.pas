@@ -3,7 +3,7 @@ Program BubbleSort;
 
 Uses crt;
 
-Type s
+Type 
   IntArray = array[1..50] Of integer;
 
 Var 
