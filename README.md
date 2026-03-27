@@ -1,5 +1,6 @@
 # Projektowanie obiektowe
 
+[Docker Hub](https://hub.docker.com/r/streko/projektowanie-obiektowe/tags)  
 [WFAIS.IF-XO301.0]
 
 ## Zadanie 1 `Paradygmaty`
@@ -21,7 +22,7 @@ Symfony (PHP).
 
 Należy stworzyć aplikację webową na bazie frameworka Symfony na obrazie [kprzystalski/projobj-php:latest](https://hub.docker.com/r/kprzystalski/projobj-php). Baza danych dowolna, sugeruję SQLite.
 
-- [ ] **3.0** Należy stworzyć jeden model z kontrolerem z produktami, zgodnie z CRUD (JSON)
+- [x] **3.0** Należy stworzyć jeden model z kontrolerem z produktami, zgodnie z CRUD (JSON) [[commit]](https://github.com/strek-o/projektowanie-obiektowe/tree/c80bc210cec53f80916bc97c2d818d135545479e)
 - [ ] **3.5** Należy stworzyć skrypty do testów endpointów via curl (JSON)
 - [ ] **4.0** Należy stworzyć dwa dodatkowe kontrolery wraz z modelami (JSON)
 - [ ] **4.5** Należy stworzyć widoki do wszystkich kontrolerów
