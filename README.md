@@ -35,7 +35,7 @@ Spring Boot (Kotlin).
 Proszę stworzyć prosty serwis do autoryzacji, który zasymuluje autoryzację użytkownika za pomocą przesłanej nazwy użytkownika oraz hasła. Serwis powinien zostać wstrzyknięty do kontrolera (4.5).
 Aplikacja ma oczywiście zawierać jeden kontroler i powinna zostać napisana w języku Kotlin. Oparta powinna zostać na frameworku Spring Boot. Serwis do autoryzacji powinien być singletonem.
 
-- [x] **3.0** Należy stworzyć jeden kontroler wraz z danymi wyświetlanymi z listy na endpoint’cie w formacie JSON - Kotlin + Spring Boot
+- [x] **3.0** Należy stworzyć jeden kontroler wraz z danymi wyświetlanymi z listy na endpoint’cie w formacie JSON - Kotlin + Spring Boot [[commit]](https://github.com/strek-o/projektowanie-obiektowe/tree/31bd054254eb90a2458dc3ffd4bf4c27a17bb470)
 - [ ] **3.5** Należy stworzyć klasę do autoryzacji (mock) jako Singleton w formie eager
 - [ ] **4.0** Należy obsłużyć dane autoryzacji przekazywane przez użytkownika
 - [ ] **4.5** Należy wstrzyknąć singleton do głównej klasy via @Autowired lub konstruktor (constructor injection)
