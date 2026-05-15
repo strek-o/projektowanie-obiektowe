@@ -77,7 +77,7 @@ Należy sprawdzić kod projektów JS 3.0, 3.5, 4.0, kotlin, go, js - 4.5, 5.0.
 
 Proszę napisać prostą aplikację w Vaporze, wykorzystując Leaf jako silnik szablonów or Fluent jako ORM. Proszę stworzyć trzy modele oraz CRUD dla każdego z nich. Należy stworzyć model z minimum jedną relacją. CRUD powinien mieć odzwierciedlenie w szablonach.
 
-- [ ] **3.0** Należy stworzyć kontroler wraz z modele Produktów zgodny z CRUD w ORM Fluent
+- [x] **3.0** Należy stworzyć kontroler wraz z modele Produktów zgodny z CRUD w ORM Fluent [[commit]](https://github.com/strek-o/projektowanie-obiektowe/tree/a66f7d65c7c40b00d50dc22dc26df6708acac0f8)
 - [ ] **3.5** Należy stworzyć szablony w Leaf
 - [ ] **4.0** Należy stworzyć drugi model oraz kontroler Kategorii wraz z relacją
 - [ ] **4.5** Należy wykorzystać Redis do przechowywania danych
