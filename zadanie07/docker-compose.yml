@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    image: zadanie07-3.0
+    container_name: zadanie07-3.0
+    ports:
+      - "8080:8080"
+    volumes:
+      - vapor-data:/app
+volumes:
+  vapor-data:
