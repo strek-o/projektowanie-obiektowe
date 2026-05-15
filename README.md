@@ -62,3 +62,23 @@ React (JavaScript/Typescript).
 - [ ] **4.0** Dane pomiędzy komponentami, takimi jak Produkty, Koszyk i Płatności, powinny być przekazywane z wykorzystaniem React hooks, np. useState, useEffect lub useContext.
 - [ ] **4.5** Należy przygotować konfigurację umożliwiającą uruchomienie aplikacji klienckiej oraz serwerowej w kontenerach Docker za pomocą docker-compose.
 - [ ] **5.0** Należy wykorzystać bibliotekę axios do komunikacji z serwerem oraz skonfigurować obsługę CORS, aby frontend mógł poprawnie komunikować się z backendem.
+
+## Zadanie 6 `Zapaszki`
+
+Należy sprawdzić kod projektów JS 3.0, 3.5, 4.0, kotlin, go, js - 4.5, 5.0.
+
+- [x] **3.0** Należy skonfigurować husky + lint-staged uruchamianie lintowania przed commitem [[commit]](https://github.com/strek-o/projektowanie-obiektowe/tree/aacf7ddd3260901ca400425f1b9c1125a12ee463)
+- [ ] **3.5** Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod aplikacji klienckiej)
+- [ ] **4.0** Przeskanować oraz naprawić dowolny projekt open source narzędziem [CodeQL](https://codeql.github.com/)
+- [ ] **4.5** Należy usunąć problemy typu Code Smell w kodzie w Sonarze (kotlin, go, js). Należy dodać badge z Sonara
+- [ ] **5.0** Skonfigurować Github Actions z linterem oraz CodeQL
+
+## Zadanie 7 `Vapor`
+
+Proszę napisać prostą aplikację w Vaporze, wykorzystując Leaf jako silnik szablonów or Fluent jako ORM. Proszę stworzyć trzy modele oraz CRUD dla każdego z nich. Należy stworzyć model z minimum jedną relacją. CRUD powinien mieć odzwierciedlenie w szablonach.
+
+- [ ] **3.0** Należy stworzyć kontroler wraz z modele Produktów zgodny z CRUD w ORM Fluent
+- [ ] **3.5** Należy stworzyć szablony w Leaf
+- [ ] **4.0** Należy stworzyć drugi model oraz kontroler Kategorii wraz z relacją
+- [ ] **4.5** Należy wykorzystać Redis do przechowywania danych
+- [ ] **5.0** Wrzucić aplikację na [heroku](https://www.heroku.com/github-students)
