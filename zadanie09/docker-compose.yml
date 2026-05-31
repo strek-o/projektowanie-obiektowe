@@ -1,0 +1,52 @@
+services:
+  backend:
+    build:
+      context: ../zadanie05/backend
+      dockerfile_inline: |
+        FROM golang:1.22-alpine AS build
+        WORKDIR /src
+        COPY go.mod ./
+        COPY main.go ./
+        RUN CGO_ENABLED=0 go build -o /server .
+
+        FROM alpine:3.20
+        COPY --from=build /server /server
+        EXPOSE 8080
+        ENTRYPOINT ["/server"]
+    image: streko/projektowanie-obiektowe:zadanie09.backend-3.0
+    container_name: zadanie09-backend
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    networks:
+      - cloud
+
+  frontend:
+    build:
+      context: ../zadanie05/frontend
+      dockerfile_inline: |
+        FROM node:20-alpine AS build
+        ENV CI=false
+        WORKDIR /app
+        COPY package.json package-lock.json ./
+        RUN npm install
+        COPY public ./public
+        COPY src ./src
+        RUN npm run build
+
+        FROM nginx:1.27-alpine
+        COPY --from=build /app/build /usr/share/nginx/html
+        EXPOSE 80
+    image: streko/projektowanie-obiektowe:zadanie09.frontend-3.0
+    container_name: zadanie09-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - cloud
+
+networks:
+  cloud:
+    driver: bridge

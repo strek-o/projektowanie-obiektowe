@@ -96,7 +96,7 @@ Wykorzystaj do tego zadania Selenium/Webdrivera (Kotlin, Python, Java, JS, Go, S
 
 ## Zadanie 9 `Chmura`
 
-- [ ] **3.0** Należy stworzyć odpowiednie instancje po stronie chmury na dockerze
+- [x] **3.0** Należy stworzyć odpowiednie instancje po stronie chmury na dockerze
 - [ ] **3.5** Stworzyć odpowiedni pipeline w Github Actions do budowania aplikacji
 - [ ] **4.0** Dodać notyfikację mailową o zbudowaniu aplikacji
 - [ ] **4.5** Dodać krok z deploymentem aplikacji serwerowej oraz klienckiej na chmurę
