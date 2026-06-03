@@ -96,14 +96,10 @@ Wykorzystaj do tego zadania Selenium/Webdrivera (Kotlin, Python, Java, JS, Go, S
 
 ## Zadanie 9 `Chmura`
 
-- [x] **3.0** Należy stworzyć odpowiednie instancje po stronie chmury na dockerze [[commit]](https://github.com/strek-o/projektowanie-obiektowe/tree/bb320a7863cbcb2a13a9079f758ed042fb589942)
+- [x] **3.0** Należy stworzyć odpowiednie instancje po stronie chmury na dockerze [[commit]](https://github.com/strek-o/projektowanie-obiektowe/tree/3b910f821d0474a57cab1dcd2bb12c69c0870ae8)
 - [ ] **3.5** Stworzyć odpowiedni pipeline w Github Actions do budowania aplikacji
 - [ ] **4.0** Dodać notyfikację mailową o zbudowaniu aplikacji
 - [ ] **4.5** Dodać krok z deploymentem aplikacji serwerowej oraz klienckiej na chmurę
 - [ ] **5.0** Dodać uruchomienie regresyjnych testów automatycznych (funkcjonalnych) jako krok w Actions
 
-
-
 https://github.com/user-attachments/assets/4dbfc772-521c-4239-9bdb-e760a100f5b8
-
-
