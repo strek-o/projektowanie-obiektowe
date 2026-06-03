@@ -96,6 +96,8 @@ Wykorzystaj do tego zadania Selenium/Webdrivera (Kotlin, Python, Java, JS, Go, S
 
 ## Zadanie 9 `Chmura`
 
+[Azure](https://zadanie09-frontend-strek.azurewebsites.net/)
+
 - [x] **3.0** Należy stworzyć odpowiednie instancje po stronie chmury na dockerze [[commit]](https://github.com/strek-o/projektowanie-obiektowe/tree/3b910f821d0474a57cab1dcd2bb12c69c0870ae8)
 - [ ] **3.5** Stworzyć odpowiedni pipeline w Github Actions do budowania aplikacji
 - [ ] **4.0** Dodać notyfikację mailową o zbudowaniu aplikacji
