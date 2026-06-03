@@ -101,3 +101,9 @@ Wykorzystaj do tego zadania Selenium/Webdrivera (Kotlin, Python, Java, JS, Go, S
 - [ ] **4.0** Dodać notyfikację mailową o zbudowaniu aplikacji
 - [ ] **4.5** Dodać krok z deploymentem aplikacji serwerowej oraz klienckiej na chmurę
 - [ ] **5.0** Dodać uruchomienie regresyjnych testów automatycznych (funkcjonalnych) jako krok w Actions
+
+
+
+https://github.com/user-attachments/assets/4dbfc772-521c-4239-9bdb-e760a100f5b8
+
+
