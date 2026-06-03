@@ -12,8 +12,6 @@ services:
     build: ./frontend
     image: streko/projektowanie-obiektowe:zadanie09.frontend-3.0
     container_name: zadanie09-frontend
-    environment:
-      - API_URL=http://localhost:8080
     ports:
       - "3000:80"
     depends_on:

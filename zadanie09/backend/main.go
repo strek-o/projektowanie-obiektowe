@@ -3,68 +3,59 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"log"
 	"net/http"
 )
 
-type LoginRequest struct {
-	Username string `json:"username"`
-	Password string `json:"password"`
+type Product struct {
+	ID    int     `json:"id"`
+	Name  string  `json:"name"`
+	Price float64 `json:"price"`
 }
 
-type LoginResponse struct {
-	Status   string `json:"status"`
-	Username string `json:"username,omitempty"`
-	Message  string `json:"message,omitempty"`
+type Payment struct {
+	Amount float64 `json:"amount"`
 }
 
-var users = map[string]string{
-	"user":  "user",
-	"admin": "admin",
+func productsHandler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+
+	if r.Method == http.MethodGet {
+		products := []Product{
+			{ID: 1, Name: "Test_01", Price: 22.22},
+			{ID: 2, Name: "Test_02", Price: 33.33},
+			{ID: 3, Name: "Test_03", Price: 44.44},
+		}
+		json.NewEncoder(w).Encode(products)
+	}
 }
 
-func setCORS(w http.ResponseWriter) {
+func paymentsHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Access-Control-Allow-Methods", "POST, OPTIONS")
 	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-}
-
-func loginHandler(w http.ResponseWriter, r *http.Request) {
-	setCORS(w)
-	w.Header().Set("Content-Type", "application/json")
 
 	if r.Method == http.MethodOptions {
 		w.WriteHeader(http.StatusOK)
 		return
 	}
 
-	if r.Method != http.MethodPost {
-		w.WriteHeader(http.StatusMethodNotAllowed)
-		return
+	if r.Method == http.MethodPost {
+		var p Payment
+		err := json.NewDecoder(r.Body).Decode(&p)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusBadRequest)
+			return
+		}
+		fmt.Printf("Received payment: %.2f PLN\n", p.Amount)
+		w.WriteHeader(http.StatusOK)
+		w.Write([]byte(`{"status": "success"}`))
 	}
-
-	var req LoginRequest
-	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
-		w.WriteHeader(http.StatusBadRequest)
-		_ = json.NewEncoder(w).Encode(LoginResponse{Status: "error", Message: "invalid request"})
-		return
-	}
-
-	password, ok := users[req.Username]
-	if !ok || password != req.Password {
-		w.WriteHeader(http.StatusUnauthorized)
-		_ = json.NewEncoder(w).Encode(LoginResponse{Status: "error", Message: "Failure!"})
-		return
-	}
-
-	_ = json.NewEncoder(w).Encode(LoginResponse{Status: "ok", Username: req.Username})
 }
 
 func main() {
-	http.HandleFunc("/login", loginHandler)
+	http.HandleFunc("/products", productsHandler)
+	http.HandleFunc("/payments", paymentsHandler)
 
 	fmt.Println("Server running on port 8080...")
-	if err := http.ListenAndServe(":8080", nil); err != nil {
-		log.Fatalf("server: %v", err)
-	}
+	http.ListenAndServe(":8080", nil)
 }
