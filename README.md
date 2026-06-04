@@ -16,6 +16,12 @@ Druga procedura sortuje liczbę za pomocą sortowania bąbelkowego.
 - [ ] **4.5** 5 testów jednostkowych testujące procedury
 - [ ] **5.0** Skrypt w bashu do uruchamiania aplikacji w Pascalu via docker
 
+
+
+https://github.com/user-attachments/assets/80ef0362-81f9-41d7-84e9-067c6ceec86d
+
+
+
 ## Zadanie 2 `Wzorce architektury`
 
 Symfony (PHP).
@@ -27,6 +33,12 @@ Należy stworzyć aplikację webową na bazie frameworka Symfony na obrazie [kpr
 - [ ] **4.0** Należy stworzyć dwa dodatkowe kontrolery wraz z modelami (JSON)
 - [ ] **4.5** Należy stworzyć widoki do wszystkich kontrolerów
 - [ ] **5.0** Stworzenie panelu administracyjnego
+
+
+
+https://github.com/user-attachments/assets/bc9baab8-cba3-4292-872e-ad8e1c3dc02c
+
+
 
 ## Zadanie 3 `Wzorce kreacyjne`
 
@@ -41,6 +53,12 @@ Aplikacja ma oczywiście zawierać jeden kontroler i powinna zostać napisana w 
 - [ ] **4.5** Należy wstrzyknąć singleton do głównej klasy via @Autowired lub konstruktor (constructor injection)
 - [ ] **5.0** Obok wersji Eager do wyboru powinna być wersja Singletona w wersji lazy
 
+
+
+https://github.com/user-attachments/assets/d4aeb3b9-1c1d-4475-bb1c-9aa9cf0b9f9f
+
+
+
 ## Zadanie 4 `Wzorce strukturalne`
 
 Echo (Go).
@@ -53,6 +71,12 @@ Należy stworzyć aplikację w Go na frameworku echo. Aplikacja ma mieć jeden e
 - [ ] **4.5** Należy zapisać pobrane dane z zewnątrz do bazy danych
 - [ ] **5.0** Należy rozszerzyć endpoint na więcej niż jedną lokalizację (Pogoda), lub akcje (Giełda) zwracając JSONa
 
+
+
+https://github.com/user-attachments/assets/df31d76d-82cc-4acc-ba9e-3a3a2f4972fb
+
+
+
 ## Zadanie 5 `Wzorce behawioralne`
 
 React (JavaScript/Typescript).
@@ -62,6 +86,12 @@ React (JavaScript/Typescript).
 - [ ] **4.0** Dane pomiędzy komponentami, takimi jak Produkty, Koszyk i Płatności, powinny być przekazywane z wykorzystaniem React hooks, np. useState, useEffect lub useContext.
 - [ ] **4.5** Należy przygotować konfigurację umożliwiającą uruchomienie aplikacji klienckiej oraz serwerowej w kontenerach Docker za pomocą docker-compose.
 - [ ] **5.0** Należy wykorzystać bibliotekę axios do komunikacji z serwerem oraz skonfigurować obsługę CORS, aby frontend mógł poprawnie komunikować się z backendem.
+
+
+
+https://github.com/user-attachments/assets/ab441401-c9a0-4ed6-8cdf-4b13f8786a0a
+
+
 
 ## Zadanie 6 `Zapaszki`
 
@@ -73,6 +103,12 @@ Należy sprawdzić kod projektów JS 3.0, 3.5, 4.0, kotlin, go, js - 4.5, 5.0.
 - [ ] **4.5** Należy usunąć problemy typu Code Smell w kodzie w Sonarze (kotlin, go, js). Należy dodać badge z Sonara
 - [ ] **5.0** Skonfigurować Github Actions z linterem oraz CodeQL
 
+
+
+https://github.com/user-attachments/assets/0215c91f-5e71-4d58-93cd-4c28329235f0
+
+
+
 ## Zadanie 7 `Vapor`
 
 Proszę napisać prostą aplikację w Vaporze, wykorzystując Leaf jako silnik szablonów or Fluent jako ORM. Proszę stworzyć trzy modele oraz CRUD dla każdego z nich. Należy stworzyć model z minimum jedną relacją. CRUD powinien mieć odzwierciedlenie w szablonach.
@@ -82,6 +118,12 @@ Proszę napisać prostą aplikację w Vaporze, wykorzystując Leaf jako silnik s
 - [ ] **4.0** Należy stworzyć drugi model oraz kontroler Kategorii wraz z relacją
 - [ ] **4.5** Należy wykorzystać Redis do przechowywania danych
 - [ ] **5.0** Wrzucić aplikację na [heroku](https://www.heroku.com/github-students)
+
+
+
+https://github.com/user-attachments/assets/ad4e4487-95de-4e95-a850-1cde2f4287ea
+
+
 
 ## Zadanie 8 `Selenium`
 
@@ -93,6 +135,12 @@ Wykorzystaj do tego zadania Selenium/Webdrivera (Kotlin, Python, Java, JS, Go, S
 - [ ] **4.5** Do zadania z React'a należy dodać formularz logowania. Następnie przeprowadź testy podatności na ataki typu Cross-Site Request Forgery (CSRF), próbując wymusić nieautoryzowaną zmianę ustawień konta
       spreparowanym linkiem, podczas gdy użytkownik posiada aktywną sesję w innej karcie.
 - [ ] **5.0** Stwórz scenariusz End-to-End w Playwright (minimum 50 asercji).
+
+
+
+https://github.com/user-attachments/assets/698c5c68-1925-4eb4-8b64-c896e1cefc40
+
+
 
 ## Zadanie 9 `Chmura`
 
