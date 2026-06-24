@@ -1,6 +1,6 @@
 # Projektowanie obiektowe
 
-[Docker Hub](https://hub.docker.com/r/streko/projektowanie-obiektowe/tags)  
+[Docker Hub]()  
 [WFAIS.IF-XO301.0]
 
 ## Zadanie 1 `Paradygmaty`
@@ -112,7 +112,7 @@ https://github.com/user-attachments/assets/698c5c68-1925-4eb4-8b64-c896e1cefc40
 
 ## Zadanie 9 `Chmura`
 
-[Azure](https://zadanie09-frontend-strek.azurewebsites.net/)
+[Azure]()
 
 - [x] **3.0** Należy stworzyć odpowiednie instancje po stronie chmury na dockerze [[commit]](https://github.com/strek-o/projektowanie-obiektowe/tree/3b910f821d0474a57cab1dcd2bb12c69c0870ae8)
 - [ ] **3.5** Stworzyć odpowiedni pipeline w Github Actions do budowania aplikacji
